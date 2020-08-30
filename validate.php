@@ -22,7 +22,7 @@ echo 'Image 1 Hash :'.$image1Hash.'<br/>';
 $image2Hash = $compareMachine->hasStringImage($image2); 
 $diff = $compareMachine->compareHash($image2Hash); 
 
-if ($diff < 2) {
+if ($diff < 1) {
     header('Location: /table.php?uuid='.$uuid);
 }else{
     echo "<h1>No Match </h1><br/>";
